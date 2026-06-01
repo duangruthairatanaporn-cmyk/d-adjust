@@ -141,6 +141,10 @@ main,
   z-index: 3;
 }
 
+.text-white {
+  color: var(--white);
+}
+
 .char,
 .word {
   display: inline-block;
