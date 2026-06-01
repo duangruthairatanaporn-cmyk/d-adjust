@@ -1,0 +1,226 @@
+﻿[
+    {
+        "No":  1,
+        "SourceName":  "0929771d-db8f-4ca5-9004-667c4ef3a02e.png",
+        "Asset":  "assets/selected/selected-01.jpg",
+        "Width":  1492,
+        "Height":  1054
+    },
+    {
+        "No":  2,
+        "SourceName":  "120794dc-c64b-4b53-8371-b4855e7f3df3.png",
+        "Asset":  "assets/selected/selected-02.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  3,
+        "SourceName":  "2b8cd5d8-a6cf-45d7-accc-63c489c69b8b.png",
+        "Asset":  "assets/selected/selected-03.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  4,
+        "SourceName":  "8fc3afdf-5599-411c-9b32-fe02d3f21df3.png",
+        "Asset":  "assets/selected/selected-04.jpg",
+        "Width":  1505,
+        "Height":  1045
+    },
+    {
+        "No":  5,
+        "SourceName":  "958fdec1-21be-455b-8813-0985986c0ee2.png",
+        "Asset":  "assets/selected/selected-05.jpg",
+        "Width":  1672,
+        "Height":  940
+    },
+    {
+        "No":  6,
+        "SourceName":  "a2c39e4a-4248-4c4e-865d-ba178302ca5e.png",
+        "Asset":  "assets/selected/selected-06.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  7,
+        "SourceName":  "b6cd1acd-b43e-48ed-9650-cf2a5d0cd90a.png",
+        "Asset":  "assets/selected/selected-07.jpg",
+        "Width":  1491,
+        "Height":  1055
+    },
+    {
+        "No":  8,
+        "SourceName":  "c2caffbd-18dc-4491-a176-f49e6a98ecb8.png",
+        "Asset":  "assets/selected/selected-08.jpg",
+        "Width":  1670,
+        "Height":  941
+    },
+    {
+        "No":  9,
+        "SourceName":  "Court.png",
+        "Asset":  "assets/selected/selected-09.jpg",
+        "Width":  1688,
+        "Height":  932
+    },
+    {
+        "No":  10,
+        "SourceName":  "d6bf713a-8805-4160-984e-b29f5aa978f2.png",
+        "Asset":  "assets/selected/selected-10.jpg",
+        "Width":  1491,
+        "Height":  1055
+    },
+    {
+        "No":  11,
+        "SourceName":  "e23c5c6c-d06b-4353-97d2-5b6dbc4878e0.png",
+        "Asset":  "assets/selected/selected-11.jpg",
+        "Width":  1667,
+        "Height":  943
+    },
+    {
+        "No":  12,
+        "SourceName":  "feaf893e-a667-4b42-95c9-b9b200e6e53d.png",
+        "Asset":  "assets/selected/selected-12.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  13,
+        "SourceName":  "hero-building.jpg",
+        "Asset":  "assets/selected/selected-13.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  14,
+        "SourceName":  "JSJS1.png",
+        "Asset":  "assets/selected/selected-14.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  15,
+        "SourceName":  "JSJS3.png",
+        "Asset":  "assets/selected/selected-15.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  16,
+        "SourceName":  "NNNT1.png",
+        "Asset":  "assets/selected/selected-16.jpg",
+        "Width":  1684,
+        "Height":  934
+    },
+    {
+        "No":  17,
+        "SourceName":  "NNNT2.png",
+        "Asset":  "assets/selected/selected-17.jpg",
+        "Width":  1662,
+        "Height":  946
+    },
+    {
+        "No":  18,
+        "SourceName":  "NNT1.png",
+        "Asset":  "assets/selected/selected-18.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  19,
+        "SourceName":  "NNT3.png",
+        "Asset":  "assets/selected/selected-19.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  20,
+        "SourceName":  "NNT4.png",
+        "Asset":  "assets/selected/selected-20.jpg",
+        "Width":  1536,
+        "Height":  1024
+    },
+    {
+        "No":  21,
+        "SourceName":  "Per-2.jpg",
+        "Asset":  "assets/selected/selected-21.jpg",
+        "Width":  1502,
+        "Height":  840
+    },
+    {
+        "No":  22,
+        "SourceName":  "Phothong4.png",
+        "Asset":  "assets/selected/selected-22.jpg",
+        "Width":  1448,
+        "Height":  1086
+    },
+    {
+        "No":  23,
+        "SourceName":  "RRD1.png",
+        "Asset":  "assets/selected/selected-23.jpg",
+        "Width":  1448,
+        "Height":  1086
+    },
+    {
+        "No":  24,
+        "SourceName":  "S3.png",
+        "Asset":  "assets/selected/selected-24.jpg",
+        "Width":  1536,
+        "Height":  1024
+    },
+    {
+        "No":  25,
+        "SourceName":  "SKW1.png",
+        "Asset":  "assets/selected/selected-25.jpg",
+        "Width":  1448,
+        "Height":  1086
+    },
+    {
+        "No":  26,
+        "SourceName":  "WH1.png",
+        "Asset":  "assets/selected/selected-26.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  27,
+        "SourceName":  "WH2.png",
+        "Asset":  "assets/selected/selected-27.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  28,
+        "SourceName":  "WH3.png",
+        "Asset":  "assets/selected/selected-28.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  29,
+        "SourceName":  "บ้านพระนอน2.png",
+        "Asset":  "assets/selected/selected-29.jpg",
+        "Width":  1672,
+        "Height":  941
+    },
+    {
+        "No":  30,
+        "SourceName":  "ฟิตเนส1.png",
+        "Asset":  "assets/selected/selected-30.jpg",
+        "Width":  1535,
+        "Height":  1024
+    },
+    {
+        "No":  31,
+        "SourceName":  "ลมโชย1.png",
+        "Asset":  "assets/selected/selected-31.jpg",
+        "Width":  1470,
+        "Height":  1070
+    },
+    {
+        "No":  32,
+        "SourceName":  "สุกี้พลาซ่า3.png",
+        "Asset":  "assets/selected/selected-32.jpg",
+        "Width":  1042,
+        "Height":  1510
+    }
+]
