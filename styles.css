@@ -1034,10 +1034,14 @@ body.one-page-viewer .viewer-copy {
 
 body.one-page-viewer .viewer-copy h2 {
   font-size: clamp(3rem, 6vw, 6.35rem);
-  letter-spacing: -0.06em;
-  line-height: 0.91;
+  letter-spacing: -0.025em;
+  line-height: 1.04;
   margin-bottom: clamp(1.1rem, 2.3vw, 1.8rem);
   max-width: none;
+}
+
+body.one-page-viewer .viewer-copy h2 .word {
+  overflow: visible;
 }
 
 body.one-page-viewer .viewer-copy h2 em {
