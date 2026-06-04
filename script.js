@@ -32,8 +32,8 @@ const selectedWorks = [
   "assets/selected/selected-24.jpg",
   "assets/selected/selected-25.jpg",
   "assets/selected/selected-26.jpg",
-  "assets/sub/selected-27.jpg",
-  "assets/sub/selected-28.jpg",
+  "assets/selected/selected-27.jpg",
+  "assets/selected/selected-28.jpg",
 ].map((src, index) => ({
   src,
   title: `Selected Work ${String(index + 1).padStart(2, "0")}`,
