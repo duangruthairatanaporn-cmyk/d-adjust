@@ -5,8 +5,37 @@ const heroImage = document.querySelector("[data-parallax]");
 const chapters = document.querySelectorAll("[data-chapter]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const onePageViewer = document.body.classList.contains("one-page-viewer");
-const selectedWorks = Array.from({ length: 32 }, (_, index) => ({
-  src: `assets/selected/selected-${String(index + 1).padStart(2, "0")}.jpg`,
+const selectedWorks = [
+  "assets/selected/selected-01.jpg",
+  "assets/selected/selected-02.jpg",
+  "assets/selected/selected-03.jpg",
+  "assets/selected/selected-04.png",
+  "assets/selected/selected-05.jpg",
+  "assets/selected/selected-06.jpg",
+  "assets/selected/selected-07.jpg",
+  "assets/selected/selected-08.jpg",
+  "assets/selected/selected-09.jpg",
+  "assets/selected/selected-10.jpg",
+  "assets/selected/selected-11.jpg",
+  "assets/selected/selected-12.jpg",
+  "assets/selected/selected-13.jpg",
+  "assets/selected/selected-14.jpg",
+  "assets/selected/selected-15.jpg",
+  "assets/selected/selected-16.jpg",
+  "assets/selected/selected-17.jpg",
+  "assets/selected/selected-18.jpg",
+  "assets/selected/selected-19.jpg",
+  "assets/selected/selected-20.jpg",
+  "assets/selected/selected-21.png",
+  "assets/selected/selected-22.jpg",
+  "assets/selected/selected-23.jpg",
+  "assets/selected/selected-24.jpg",
+  "assets/selected/selected-25.png",
+  "assets/selected/selected-26.jpg",
+  "assets/sub/selected-27.jpg",
+  "assets/sub/selected-28.jpg",
+].map((src, index) => ({
+  src,
   title: `Selected Work ${String(index + 1).padStart(2, "0")}`,
 }));
 
