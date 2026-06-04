@@ -17,6 +17,7 @@ const selectedWorks = [
   "assets/selected/selected-09.jpg",
   "assets/selected/selected-10.jpg",
   "assets/selected/selected-11.jpg",
+  "assets/selected/selected-12.jpg",
   "assets/selected/selected-13.jpg",
   "assets/selected/selected-14.jpg",
 ].map((src, index) => ({
