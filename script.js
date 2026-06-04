@@ -20,7 +20,6 @@ const selectedWorks = [
   "assets/selected/selected-11.jpg",
   "assets/selected/selected-12.jpg",
   "assets/selected/selected-13.jpg",
-  "assets/selected/selected-14.jpg",
 ].map((src, index) => ({
   src: `${src}?v=${selectedAssetVersion}`,
   title: `Selected Work ${String(index + 1).padStart(2, "0")}`,
