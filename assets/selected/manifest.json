@@ -194,33 +194,5 @@
         "Asset": "assets/selected/selected-28.jpg",
         "Width": 1672,
         "Height": 941
-    },
-    {
-        "No": 29,
-        "SourceName": "บ้านพระนอน2.png",
-        "Asset": "assets/selected/selected-29.jpg",
-        "Width": 1672,
-        "Height": 941
-    },
-    {
-        "No": 30,
-        "SourceName": "ฟิตเนส1.png",
-        "Asset": "assets/selected/selected-30.jpg",
-        "Width": 1535,
-        "Height": 1024
-    },
-    {
-        "No": 31,
-        "SourceName": "ลมโชย1.png",
-        "Asset": "assets/selected/selected-31.jpg",
-        "Width": 1470,
-        "Height": 1070
-    },
-    {
-        "No": 32,
-        "SourceName": "สุกี้พลาซ่า3.png",
-        "Asset": "assets/selected/selected-32.jpg",
-        "Width": 1042,
-        "Height": 1510
     }
 ]
