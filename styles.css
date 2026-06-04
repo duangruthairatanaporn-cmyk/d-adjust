@@ -1387,7 +1387,7 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   body.one-page-viewer .viewer-stage img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
   }
 
