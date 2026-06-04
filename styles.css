@@ -1236,13 +1236,13 @@ body.one-page-viewer .mobile-menu.open {
     bottom: auto;
     left: var(--pad);
     right: var(--pad);
-    top: calc(58svh - 10rem);
+    top: calc(58svh - 8.3rem);
   }
 
   .hero h1 {
-    font-size: clamp(2.35rem, 11.5vw, 3rem);
+    font-size: clamp(2.15rem, 10.5vw, 2.75rem);
     line-height: 0.95;
-    max-width: 18rem;
+    max-width: 16rem;
   }
 
   .scroll-cue {
@@ -1385,8 +1385,8 @@ body.one-page-viewer .mobile-menu.open {
     aspect-ratio: 9 / 16;
     height: min(100svh, 100vw * 16 / 9);
     background:
-      radial-gradient(circle at 50% 18%, rgba(232, 154, 49, 0.18), transparent 34%),
-      linear-gradient(180deg, rgba(10, 10, 10, 0.96), rgba(22, 18, 14, 0.95));
+      radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.18)), transparent 34%),
+      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.96)), rgba(22, 18, 14, 0.95));
     border: 1px solid rgba(252, 251, 248, 0.1);
     border-radius: 1.1rem;
     box-shadow:

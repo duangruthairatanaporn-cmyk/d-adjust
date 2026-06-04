@@ -4,6 +4,7 @@ const mobileMenu = document.querySelector("[data-mobile-menu]");
 const heroImage = document.querySelector("[data-parallax]");
 const chapters = document.querySelectorAll("[data-chapter]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const mobileMedia = window.matchMedia("(max-width: 680px)");
 const onePageViewer = document.body.classList.contains("one-page-viewer");
 const selectedAssetVersion = "20260604";
 const selectedWorks = [
@@ -140,9 +141,59 @@ function initSelectedViewer() {
   let isChanging = false;
   let wheelIntent = 0;
   let wheelTimer = null;
+  let mobileBgFrame = null;
 
   function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));
+  }
+
+  function setViewerMobileBackground(src) {
+    if (!mobileMedia.matches) {
+      return;
+    }
+
+    if (mobileBgFrame) {
+      window.cancelAnimationFrame(mobileBgFrame);
+    }
+
+    const sample = new Image();
+    sample.crossOrigin = "anonymous";
+    sample.decoding = "async";
+    sample.src = src;
+
+    sample.onload = () => {
+      mobileBgFrame = window.requestAnimationFrame(() => {
+        const canvas = document.createElement("canvas");
+        canvas.width = 8;
+        canvas.height = 8;
+        const ctx = canvas.getContext("2d", { willReadFrequently: true });
+        if (!ctx) {
+          return;
+        }
+
+        ctx.drawImage(sample, 0, 0, 8, 8);
+        const pixels = ctx.getImageData(0, 0, 8, 8).data;
+        let r = 0;
+        let g = 0;
+        let b = 0;
+        const total = pixels.length / 4;
+
+        for (let i = 0; i < pixels.length; i += 4) {
+          r += pixels[i];
+          g += pixels[i + 1];
+          b += pixels[i + 2];
+        }
+
+        r /= total;
+        g /= total;
+        b /= total;
+
+        const dark = `rgba(${Math.max(0, Math.round(r * 0.22))}, ${Math.max(0, Math.round(g * 0.22))}, ${Math.max(0, Math.round(b * 0.22))}, 0.96)`;
+        const glow = `rgba(${Math.min(255, Math.round(r * 1.05))}, ${Math.min(255, Math.round(g * 1.05))}, ${Math.min(255, Math.round(b * 1.05))}, 0.2)`;
+        stage.style.setProperty("--mobile-stage-dark", dark);
+        stage.style.setProperty("--mobile-stage-glow", glow);
+      });
+    };
   }
 
   function applyTransform() {
@@ -179,6 +230,7 @@ function initSelectedViewer() {
       index = (nextIndex + selectedWorks.length) % selectedWorks.length;
       image.src = selectedWorks[index].src;
       image.alt = `${selectedWorks[index].title} from the curated D-Adjust work set`;
+      setViewerMobileBackground(selectedWorks[index].src);
       resetTransform();
       updateMeta();
       stage.classList.remove("is-changing");
@@ -342,6 +394,7 @@ function initSelectedViewer() {
   });
 
   updateMeta();
+  setViewerMobileBackground(selectedWorks[index].src);
   resetTransform();
 }
 
