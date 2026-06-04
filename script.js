@@ -5,6 +5,7 @@ const heroImage = document.querySelector("[data-parallax]");
 const chapters = document.querySelectorAll("[data-chapter]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const onePageViewer = document.body.classList.contains("one-page-viewer");
+const selectedAssetVersion = "20260604";
 const selectedWorks = [
   "assets/selected/selected-01.jpg",
   "assets/selected/selected-02.jpg",
@@ -21,7 +22,7 @@ const selectedWorks = [
   "assets/selected/selected-13.jpg",
   "assets/selected/selected-14.jpg",
 ].map((src, index) => ({
-  src,
+  src: `${src}?v=${selectedAssetVersion}`,
   title: `Selected Work ${String(index + 1).padStart(2, "0")}`,
 }));
 
