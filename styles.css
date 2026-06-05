@@ -1236,13 +1236,13 @@ body.one-page-viewer .mobile-menu.open {
     left: var(--pad);
     right: var(--pad);
     top: 50%;
-    transform: translateY(-42%);
+    transform: translateY(-34%);
   }
 
   .hero h1 {
-    font-size: clamp(1.6rem, 7.8vw, 2.05rem);
+    font-size: clamp(1.12rem, 5.4vw, 1.44rem);
     line-height: 0.94;
-    max-width: 12.8rem;
+    max-width: 10rem;
   }
 
   .scroll-cue {
@@ -1385,8 +1385,8 @@ body.one-page-viewer .mobile-menu.open {
     aspect-ratio: 9 / 16;
     height: min(100svh, 100vw * 16 / 9);
     background:
-      radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.12)), transparent 34%),
-      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.84)), rgba(0, 0, 0, 0.98));
+      radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.08)), transparent 38%),
+      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.68)), rgba(0, 0, 0, 0.96));
     border: 1px solid rgba(252, 251, 248, 0.08);
     border-radius: 1.1rem;
     box-shadow:
@@ -1402,11 +1402,12 @@ body.one-page-viewer .mobile-menu.open {
 
   body.one-page-viewer .hero-content {
     top: 50%;
-    transform: translateY(-42%);
+    transform: translateY(-34%);
   }
 
   body.one-page-viewer .hero h1 {
-    font-size: clamp(1.6rem, 7.8vw, 2.05rem);
+    font-size: clamp(1.12rem, 5.4vw, 1.44rem);
+    max-width: 10rem;
     line-height: 0.94;
   }
 
