@@ -1233,16 +1233,16 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   .hero-content {
-    bottom: auto;
     left: var(--pad);
     right: var(--pad);
-    top: calc(58svh - 7.2rem);
+    top: 50%;
+    transform: translateY(-42%);
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 9.8vw, 2.55rem);
-    line-height: 0.95;
-    max-width: 15rem;
+    font-size: clamp(1.6rem, 7.8vw, 2.05rem);
+    line-height: 0.94;
+    max-width: 12.8rem;
   }
 
   .scroll-cue {
@@ -1385,9 +1385,9 @@ body.one-page-viewer .mobile-menu.open {
     aspect-ratio: 9 / 16;
     height: min(100svh, 100vw * 16 / 9);
     background:
-      radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.18)), transparent 34%),
-      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.96)), rgba(8, 8, 8, 0.98));
-    border: 1px solid rgba(252, 251, 248, 0.1);
+      radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.12)), transparent 34%),
+      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.84)), rgba(0, 0, 0, 0.98));
+    border: 1px solid rgba(252, 251, 248, 0.08);
     border-radius: 1.1rem;
     box-shadow:
       0 18px 50px rgba(0, 0, 0, 0.34),
@@ -1401,11 +1401,13 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   body.one-page-viewer .hero-content {
-    top: calc(58svh - 7.2rem);
+    top: 50%;
+    transform: translateY(-42%);
   }
 
   body.one-page-viewer .hero h1 {
-    font-size: clamp(2rem, 9.8vw, 2.55rem);
+    font-size: clamp(1.6rem, 7.8vw, 2.05rem);
+    line-height: 0.94;
   }
 
   body.one-page-viewer .viewer-controls {

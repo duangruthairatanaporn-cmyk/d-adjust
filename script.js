@@ -188,8 +188,8 @@ function initSelectedViewer() {
         g /= total;
         b /= total;
 
-        const dark = `rgba(${Math.max(0, Math.round(r * 0.22))}, ${Math.max(0, Math.round(g * 0.22))}, ${Math.max(0, Math.round(b * 0.22))}, 0.96)`;
-        const glow = `rgba(${Math.min(255, Math.round(r * 1.05))}, ${Math.min(255, Math.round(g * 1.05))}, ${Math.min(255, Math.round(b * 1.05))}, 0.2)`;
+        const dark = `rgba(${Math.max(0, Math.round(r * 0.16))}, ${Math.max(0, Math.round(g * 0.16))}, ${Math.max(0, Math.round(b * 0.16))}, 0.82)`;
+        const glow = `rgba(${Math.min(255, Math.round(r * 1.05))}, ${Math.min(255, Math.round(g * 1.05))}, ${Math.min(255, Math.round(b * 1.05))}, 0.12)`;
         stage.style.setProperty("--mobile-stage-dark", dark);
         stage.style.setProperty("--mobile-stage-glow", glow);
       });
