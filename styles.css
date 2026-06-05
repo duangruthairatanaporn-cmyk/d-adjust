@@ -1236,13 +1236,13 @@ body.one-page-viewer .mobile-menu.open {
     bottom: auto;
     left: var(--pad);
     right: var(--pad);
-    top: calc(58svh - 8.3rem);
+    top: calc(58svh - 7.2rem);
   }
 
   .hero h1 {
-    font-size: clamp(2.15rem, 10.5vw, 2.75rem);
+    font-size: clamp(2rem, 9.8vw, 2.55rem);
     line-height: 0.95;
-    max-width: 16rem;
+    max-width: 15rem;
   }
 
   .scroll-cue {
@@ -1386,7 +1386,7 @@ body.one-page-viewer .mobile-menu.open {
     height: min(100svh, 100vw * 16 / 9);
     background:
       radial-gradient(circle at 50% 18%, var(--mobile-stage-glow, rgba(232, 154, 49, 0.18)), transparent 34%),
-      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.96)), rgba(22, 18, 14, 0.95));
+      linear-gradient(180deg, var(--mobile-stage-dark, rgba(10, 10, 10, 0.96)), rgba(8, 8, 8, 0.98));
     border: 1px solid rgba(252, 251, 248, 0.1);
     border-radius: 1.1rem;
     box-shadow:
@@ -1398,6 +1398,14 @@ body.one-page-viewer .mobile-menu.open {
   body.one-page-viewer .viewer-stage img {
     object-fit: contain;
     object-position: center center;
+  }
+
+  body.one-page-viewer .hero-content {
+    top: calc(58svh - 7.2rem);
+  }
+
+  body.one-page-viewer .hero h1 {
+    font-size: clamp(2rem, 9.8vw, 2.55rem);
   }
 
   body.one-page-viewer .viewer-controls {
