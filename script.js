@@ -59,6 +59,53 @@ function initMenu() {
   });
 }
 
+function initProjectsDropdown() {
+  const toggles = document.querySelectorAll("[data-projects-dropdown-toggle]");
+  const menus = document.querySelectorAll("[data-projects-dropdown-menu]");
+
+  function closeAll() {
+    document.querySelectorAll(".nav-dropdown.is-open, .mobile-projects.is-open").forEach((item) => {
+      item.classList.remove("is-open");
+      const button = item.querySelector("[data-projects-dropdown-toggle]");
+      if (button) {
+        button.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", (event) => {
+      const wrapper = toggle.parentElement;
+      const isOpen = wrapper.classList.contains("is-open");
+      closeAll();
+      if (!isOpen) {
+        wrapper.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+      event.stopPropagation();
+    });
+  });
+
+  menus.forEach((menu) => {
+    menu.addEventListener("click", (event) => {
+      const link = event.target.closest("a");
+      if (!link) {
+        return;
+      }
+      closeAll();
+      if (menu.closest(".mobile-menu") && menu.closest(".mobile-menu").classList.contains("open")) {
+        toggleMenu();
+      }
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-dropdown") && !event.target.closest(".mobile-projects")) {
+      closeAll();
+    }
+  });
+}
+
 function initProjectCardLinks() {
   document.querySelectorAll(".project-card[href]").forEach((card) => {
     card.addEventListener("click", (event) => {
@@ -699,6 +746,7 @@ function initPaintCanvas() {
 
 function initPage() {
   initMenu();
+  initProjectsDropdown();
   initProjectCardLinks();
   initSplitting();
   initSelectedViewer();

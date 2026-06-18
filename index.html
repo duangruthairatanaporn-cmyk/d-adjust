@@ -36,7 +36,22 @@
         >
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
+        <div class="nav-dropdown">
+          <button
+            class="nav-dropdown-toggle"
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-projects-dropdown-toggle
+          >
+            Projects
+          </button>
+          <div class="nav-dropdown-menu" data-projects-dropdown-menu>
+            <a href="projects/house-01.html">House 01</a>
+            <a href="projects/house-02.html">House 02</a>
+            <a href="projects/house-03.html">House 03</a>
+          </div>
+        </div>
         <a href="#studio">About</a>
         <a href="#approach">Approach</a>
         <a href="#journal">Journal</a>
@@ -49,7 +64,16 @@
     </header>
 
     <nav class="mobile-menu" aria-label="Mobile navigation" data-mobile-menu>
-      <a href="#projects">Projects</a>
+      <div class="mobile-projects">
+        <button type="button" class="mobile-projects-toggle" aria-expanded="false" data-projects-dropdown-toggle>
+          Projects
+        </button>
+        <div class="mobile-projects-menu" data-projects-dropdown-menu>
+          <a href="projects/house-01.html">House 01</a>
+          <a href="projects/house-02.html">House 02</a>
+          <a href="projects/house-03.html">House 03</a>
+        </div>
+      </div>
       <a href="#studio">About</a>
       <a href="#approach">Approach</a>
       <a href="#journal">Journal</a>
