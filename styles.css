@@ -512,11 +512,17 @@ main,
   display: grid;
   gap: clamp(0.8rem, 1.25vw, 1.15rem);
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  z-index: 2;
 }
 
 .project-card {
   color: inherit;
   display: grid;
+  pointer-events: auto;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .project-image {
@@ -541,6 +547,11 @@ main,
 
 .project-card:hover img {
   transform: scale(1.06);
+}
+
+.project-card:focus-visible {
+  outline: 1px solid var(--accent-bright);
+  outline-offset: 0.35rem;
 }
 
 .project-card h3 {

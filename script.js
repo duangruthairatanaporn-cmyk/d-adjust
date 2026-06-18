@@ -59,6 +59,27 @@ function initMenu() {
   });
 }
 
+function initProjectCardLinks() {
+  document.querySelectorAll(".project-card[href]").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      const modifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+      if (modifiedClick) {
+        return;
+      }
+
+      event.preventDefault();
+      window.location.href = card.href;
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.href = card.href;
+      }
+    });
+  });
+}
+
 function initSmoothScroll() {
   if (onePageViewer || reducedMotion.matches || typeof Lenis === "undefined") {
     return null;
@@ -678,6 +699,7 @@ function initPaintCanvas() {
 
 function initPage() {
   initMenu();
+  initProjectCardLinks();
   initSplitting();
   initSelectedViewer();
   initSmoothScroll();
