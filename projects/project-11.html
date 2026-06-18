@@ -1,28 +1,15 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="en" class="one-page-viewer-root">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#151513">
-    <title>Selected Work 11 | D-Adjust Architecture</title>
-    <meta name="description" content="Selected Work 11 is a temporary project page for the D-Adjust website.">
+    <title>Project 11 | D-Adjust Architecture</title>
+    <meta name="description" content="Project 11 is a calm, warm and timeless D-Adjust project page.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-      html.one-page-viewer-root, html:has(body.one-page-viewer) { overflow: hidden; scroll-behavior: auto; }
-      body.one-page-viewer main { height: 100svh; overflow: hidden; }
-      .project-shell { min-height: 100svh; position: relative; }
-      .project-shell .hero { height: 100svh; min-height: 100svh; }
-      .project-shell .hero-content { left: var(--pad); right: var(--pad); top: 50%; transform: translateY(-22%); }
-      .project-shell .hero-content h1 { font-size: clamp(2.2rem, 7vw, 5rem); line-height: 1; }
-      .project-bottom-nav { bottom: clamp(1.25rem, 3vw, 2rem); left: var(--pad); position: absolute; right: var(--pad); z-index: 5; }
-      .project-bottom-nav .project-nav { align-items: end; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0; }
-      .project-bottom-nav .project-nav a { min-width: 0; }
-      .project-index { color: rgba(252,251,248,.34); font-size: .62rem; letter-spacing: .18em; position: absolute; right: var(--pad); top: clamp(5.9rem, 9vw, 7.8rem); text-transform: uppercase; z-index: 3; }
-      @media (max-width: 680px) { .project-shell .hero-content { transform: translateY(-18%); } .project-bottom-nav .project-nav { grid-template-columns: 1fr; } }
-    </style>
     <script defer src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -34,36 +21,69 @@
     <canvas class="paint-canvas" data-paint-canvas aria-hidden="true"></canvas>
     <div class="ambient-wash" aria-hidden="true"></div>
     <header class="site-header" data-header>
-      <a class="brand" href="../index.html" aria-label="D-Adjust Architecture home"><img src="../assets/logo/d-adjust-wordmark-light.png" alt="D+Adjust" width="3757" height="692"></a>
+      <a class="brand" href="../index.html" aria-label="D-Adjust Architecture home">
+        <img src="../assets/logo/d-adjust-wordmark-light.png" alt="D+Adjust" width="3757" height="692">
+      </a>
       <nav class="main-nav" aria-label="Primary navigation">
         <div class="nav-dropdown">
           <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-projects-dropdown-toggle>Projects</button>
           <div class="nav-dropdown-menu" data-projects-dropdown-menu>
-            <a href="project-01.html">Project 01</a><a href="project-02.html">Project 02</a><a href="project-03.html">Project 03</a><a href="project-04.html">Project 04</a><a href="project-05.html">Project 05</a><a href="project-06.html">Project 06</a><a href="project-07.html">Project 07</a><a href="project-08.html">Project 08</a><a href="project-09.html">Project 09</a><a href="project-10.html">Project 10</a><a href="project-11.html">Project 11</a><a href="project-12.html">Project 12</a><a href="project-13.html">Project 13</a>
+            <a href="project-01.html">Project 01</a>
+            <a href="project-02.html">Project 02</a>
+            <a href="project-03.html">Project 03</a>
+            <a href="project-04.html">Project 04</a>
+            <a href="project-05.html">Project 05</a>
+            <a href="project-06.html">Project 06</a>
+            <a href="project-07.html">Project 07</a>
+            <a href="project-08.html">Project 08</a>
+            <a href="project-09.html">Project 09</a>
+            <a href="project-10.html">Project 10</a>
+            <a href="project-11.html">Project 11</a>
+            <a href="project-12.html">Project 12</a>
+            <a href="project-13.html">Project 13</a>
           </div>
         </div>
-        <a href="../index.html#studio">About</a><a href="../index.html#journal">Journal</a><a href="../index.html#contact">Contact</a>
+        <a href="../index.html#studio">About</a>
+        <a href="../index.html#journal">Journal</a>
+        <a href="../index.html#contact">Contact</a>
       </nav>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <nav class="mobile-menu" aria-label="Mobile navigation" data-mobile-menu>
       <div class="mobile-projects">
         <button type="button" class="mobile-projects-toggle" aria-expanded="false" data-projects-dropdown-toggle>Projects</button>
         <div class="mobile-projects-menu" data-projects-dropdown-menu>
-          <a href="project-01.html">Project 01</a><a href="project-02.html">Project 02</a><a href="project-03.html">Project 03</a><a href="project-04.html">Project 04</a><a href="project-05.html">Project 05</a><a href="project-06.html">Project 06</a><a href="project-07.html">Project 07</a><a href="project-08.html">Project 08</a><a href="project-09.html">Project 09</a><a href="project-10.html">Project 10</a><a href="project-11.html">Project 11</a><a href="project-12.html">Project 12</a><a href="project-13.html">Project 13</a>
+          <a href="project-01.html">Project 01</a>
+          <a href="project-02.html">Project 02</a>
+          <a href="project-03.html">Project 03</a>
+          <a href="project-04.html">Project 04</a>
+          <a href="project-05.html">Project 05</a>
+          <a href="project-06.html">Project 06</a>
+          <a href="project-07.html">Project 07</a>
+          <a href="project-08.html">Project 08</a>
+          <a href="project-09.html">Project 09</a>
+          <a href="project-10.html">Project 10</a>
+          <a href="project-11.html">Project 11</a>
+          <a href="project-12.html">Project 12</a>
+          <a href="project-13.html">Project 13</a>
         </div>
       </div>
-      <a href="../index.html#studio">About</a><a href="../index.html#journal">Journal</a><a href="../index.html#contact">Contact</a>
-    </nav>
-    <main id="top" class="project-shell">
-      <div class="project-index">Project 11</div>
+      <a href="../index.html#studio">About</a>
+      <a href="../index.html#journal">Journal</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>    <main id="top">
       <section class="hero story-chapter" aria-label="Project hero" data-chapter data-tone="#2c2118">
-        <img class="hero-image" data-parallax src="../assets/selected/selected-11.jpg?v=20260604" alt="Selected Work 11 hero image" fetchpriority="high">
+        <img class="hero-image" data-parallax src="../assets/selected/selected-11.jpg?v=20260604" alt="Project 11 hero image" fetchpriority="high">
         <div class="hero-shade"></div>
-        <div class="hero-content reveal is-visible"><p class="overline">Selected Work 11</p><h1 data-splitting>Selected Work 11</h1><a class="text-link text-link--light" href="../index.html#projects">Back to projects <span aria-hidden="true">&rarr;</span></a></div>
-        <div class="project-bottom-nav"><div class="project-nav"><a href="project-10.html"><span>Previous Project</span><strong>Selected Work 10</strong></a><a href="project-12.html"><span>Next Project</span><strong>Selected Work 12</strong></a></div></div>
+        <div class="chapter-index">Project 11</div>
+        <div class="hero-content reveal is-visible">
+          <p class="overline">Project 11</p>
+          <h1 data-splitting>Project 11</h1>
+        </div>
       </section>
     </main>
   </body>
 </html>
-
