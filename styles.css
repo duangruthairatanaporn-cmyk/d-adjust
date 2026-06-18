@@ -262,6 +262,18 @@ main,
   color: var(--accent-bright);
 }
 
+.selected-project-link {
+  display: block;
+}
+
+.selected-project-link h2 {
+  pointer-events: none;
+}
+
+.selected-project-link p {
+  pointer-events: none;
+}
+
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown.is-open .nav-dropdown-menu,
 .mobile-projects.is-open .mobile-projects-menu {

@@ -8,25 +8,29 @@ const mobileMedia = window.matchMedia("(max-width: 680px)");
 const onePageViewer = document.body.classList.contains("one-page-viewer");
 const selectedAssetVersion = "20260604";
 const selectedWorks = [
-  "assets/selected/selected-01.jpg",
-  "assets/selected/selected-02.jpg",
-  "assets/selected/selected-03.jpg",
-  "assets/selected/selected-04.jpg",
-  "assets/selected/selected-05.jpg",
-  "assets/selected/selected-06.jpg",
-  "assets/selected/selected-07.jpg",
-  "assets/selected/selected-08.jpg",
-  "assets/selected/selected-09.jpg",
-  "assets/selected/selected-10.jpg",
-  "assets/selected/selected-11.jpg",
-  "assets/selected/selected-12.jpg",
-  "assets/selected/selected-13.jpg",
-].map((src, index) => ({
-  src: `${src}?v=${selectedAssetVersion}`,
+  { src: "assets/selected/selected-01.jpg", page: "projects/project-01.html" },
+  { src: "assets/selected/selected-02.jpg", page: "projects/project-02.html" },
+  { src: "assets/selected/selected-03.jpg", page: "projects/project-03.html" },
+  { src: "assets/selected/selected-04.jpg", page: "projects/project-04.html" },
+  { src: "assets/selected/selected-05.jpg", page: "projects/project-05.html" },
+  { src: "assets/selected/selected-06.jpg", page: "projects/project-06.html" },
+  { src: "assets/selected/selected-07.jpg", page: "projects/project-07.html" },
+  { src: "assets/selected/selected-08.jpg", page: "projects/project-08.html" },
+  { src: "assets/selected/selected-09.jpg", page: "projects/project-09.html" },
+  { src: "assets/selected/selected-10.jpg", page: "projects/project-10.html" },
+  { src: "assets/selected/selected-11.jpg", page: "projects/project-11.html" },
+  { src: "assets/selected/selected-12.jpg", page: "projects/project-12.html" },
+  { src: "assets/selected/selected-13.jpg", page: "projects/project-13.html" },
+].map((item, index) => ({
+  src: `${item.src}?v=${selectedAssetVersion}`,
+  page: item.page,
   title: `Selected Work ${String(index + 1).padStart(2, "0")}`,
 }));
 
 function updateHeader() {
+  if (!header) {
+    return;
+  }
   header.classList.toggle("scrolled", window.scrollY > 36);
 }
 
@@ -193,6 +197,7 @@ function initSelectedViewer() {
   const count = viewer.querySelector("[data-viewer-count]");
   const title = viewer.querySelector("[data-viewer-title]");
   const progress = viewer.querySelector("[data-viewer-progress]");
+  const projectLinks = viewer.querySelectorAll("[data-selected-project-link]");
   const prev = viewer.querySelector("[data-viewer-prev]");
   const next = viewer.querySelector("[data-viewer-next]");
   let index = 0;
@@ -284,6 +289,9 @@ function initSelectedViewer() {
     count.textContent = `${String(index + 1).padStart(2, "0")} / ${selectedWorks.length}`;
     title.textContent = current.title;
     progress.style.transform = `scaleX(${(index + 1) / selectedWorks.length})`;
+    projectLinks.forEach((link) => {
+      link.href = current.page;
+    });
   }
 
   function show(nextIndex, direction = 1) {
