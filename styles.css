@@ -1360,9 +1360,14 @@ body.one-page-viewer .mobile-menu.open {
   .hero-content {
     left: var(--pad);
     right: var(--pad);
-    top: 52%;
+    top: 45vh;
     bottom: auto;
-    transform: translateY(-50%);
+    transform: none;
+    background: none;
+    backdrop-filter: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
     max-width: min(30rem, calc(100vw - var(--pad) * 2));
     z-index: 4;
   }
@@ -1613,9 +1618,14 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   body.one-page-viewer .hero-content {
-    top: 52%;
+    top: 45vh;
     bottom: auto;
-    transform: translateY(-50%);
+    transform: none;
+    background: none;
+    backdrop-filter: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   body.one-page-viewer .hero h1 {
