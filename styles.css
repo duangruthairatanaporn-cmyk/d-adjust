@@ -1326,7 +1326,8 @@ body.one-page-viewer .mobile-menu.open {
     left: var(--pad);
     max-width: min(34rem, calc(100vw - var(--pad) * 2));
     padding-bottom: 0;
-    top: clamp(7rem, 13vh, 8.6rem);
+    top: 52%;
+    transform: translateY(-50%);
   }
 
   body.one-page-viewer .viewer-copy h2 {
@@ -1359,9 +1360,9 @@ body.one-page-viewer .mobile-menu.open {
   .hero-content {
     left: var(--pad);
     right: var(--pad);
-    top: auto;
-    bottom: clamp(2rem, 7vw, 3.2rem);
-    transform: none;
+    top: 52%;
+    bottom: auto;
+    transform: translateY(-50%);
     max-width: min(30rem, calc(100vw - var(--pad) * 2));
     z-index: 4;
   }
@@ -1612,9 +1613,9 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   body.one-page-viewer .hero-content {
-    top: auto;
-    bottom: clamp(2rem, 7vw, 3.2rem);
-    transform: none;
+    top: 52%;
+    bottom: auto;
+    transform: translateY(-50%);
   }
 
   body.one-page-viewer .hero h1 {
@@ -1624,13 +1625,13 @@ body.one-page-viewer .mobile-menu.open {
   }
 
   .selected-project-link {
-    background: linear-gradient(180deg, rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.72));
-    border: 1px solid rgba(247, 245, 241, 0.08);
-    backdrop-filter: blur(10px);
+    background: transparent;
+    border: 0;
+    backdrop-filter: none;
     display: grid;
     gap: 0.6rem;
     max-width: 100%;
-    padding: 1.1rem 1rem 1rem;
+    padding: 0;
     pointer-events: auto;
   }
 
